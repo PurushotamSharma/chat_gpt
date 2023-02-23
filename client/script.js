@@ -86,7 +86,8 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://gpt-q17d.onrender.com', {
+    const response = await fetch('https://localhost:5000', 
+    {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
